@@ -1,0 +1,180 @@
+body{
+ background-image: url("https://www.motorlegend.com/modules/breve/photos/src/radars--prives--un-maire-se-reb-17672-1-P.jpg");
+ background-size: 100%;
+ background-repeat: no-repeat;
+    }
+
+    
+#banner{
+ font-family: 'Major Mono Display', monospace;
+ display: flex;
+ justify-content: center;
+ border: solid ;
+ border-width: 2px;
+ border-color: darkorange;
+ border-radius: 5px;
+ background-color: rgba(0,0,0,.7);
+ font-size: 28px;
+ width: 900px;
+ margin: 0 auto;
+
+    }    
+
+#bannertxt{
+ color:white;
+ opacity: 1.0;
+    }    
+
+#border1{
+ font-family: 'Major Mono Display', monospace;
+ font-size: 10px;
+ color: white;
+ display: flex;
+ justify-content:center ;
+ flex-direction: column;
+ border: solid ;
+ border-width: 2px;
+ border-color: darkorange;   
+ border-radius: 5px;
+ width: 900px;
+ height: 200px;
+ margin: 0 auto;
+ background-color: rgba(0,0,0,.7);
+    }
+    
+#border2{
+ font-family: 'Major Mono Display', monospace;
+ font-size: 10px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ border: solid ;
+ border-width: 2px;
+ border-color: darkorange;   
+ border-radius: 5px;
+ width: 900px;
+ height: 200px;
+ margin: 0 auto;
+ background-color: rgba(0,0,0,.7);    
+    }  
+
+#border3{
+ font-family: 'Major Mono Display', monospace;
+ font-size: 10px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ justify-content: space-between;
+ justify-content: space-around;
+ flex-direction: column;
+ border: solid ;
+ border-width: 2px;
+ border-color: darkorange;   
+ border-radius: 5px;
+ width: 900px;
+ height: 500px;
+ margin: 0 auto;
+ background-color: rgba(0,0,0,.7);    
+        }    
+
+.ipt1{
+ align-self: center;
+ height: 40px;    
+ width: 130px;
+ border-radius: 5px;   
+    }
+
+.ipt2{
+ align-self: center;
+ height: 40px;    
+ width: 130px;
+ border-radius: 5px;    
+    } 
+
+.ipt3{
+ align-self: center;
+ height: 40px;      
+ width: 130px;
+ border-radius: 5px;   
+    } 
+
+.ipt4{
+ align-self: center;
+ height: 40px;    
+ width: 130px;
+ border-radius: 5px;  
+    }
+    
+
+.eyecolor{
+ display: flex;
+ align-self: center;    
+ font-size: 13px;    
+    }
+
+#header1{
+ align-self: center;    
+    }
+
+#header2{
+ align-self: center;    
+    }
+
+#header3{
+ align-self: center;    
+    }
+        
+#btn1{
+ font-family: 'Major Mono Display', monospace;
+ font-size: 20px;
+ color: white;
+ height: 40px;    
+ width: 130px;
+ align-self: center;
+ background: blue;
+ border: solid 3px;
+ border-color: darkblue;
+ border-radius: 5px;
+    }
+    
+.target1{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;    
+    }
+    
+.target2{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;
+    
+    }
+
+.target3{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;   
+    }
+    
+.target4{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;          
+    }
+    
+.target5{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;          
+    }        
