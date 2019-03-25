@@ -1,0 +1,295 @@
+<!DOCTYPE html> <html><head>
+        <title>Driving Survey</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+</style>
+    <style>body{
+ background-image: url("https://www.motorlegend.com/modules/breve/photos/src/radars--prives--un-maire-se-reb-17672-1-P.jpg");
+ background-size: 100%;
+ background-repeat: no-repeat;
+    }
+
+    
+#banner{
+ font-family: 'Major Mono Display', monospace;
+ display: flex;
+ justify-content: center;
+ border: solid ;
+ border-width: 2px;
+ border-color: darkorange;
+ border-radius: 5px;
+ background-color: rgba(0,0,0,.7);
+ font-size: 28px;
+ width: 900px;
+ margin: 0 auto;
+
+    }    
+
+#bannertxt{
+ color:white;
+ opacity: 1.0;
+    }    
+
+#border1{
+ font-family: 'Major Mono Display', monospace;
+ font-size: 10px;
+ color: white;
+ display: flex;
+ justify-content:center ;
+ flex-direction: column;
+ border: solid ;
+ border-width: 2px;
+ border-color: darkorange;   
+ border-radius: 5px;
+ width: 900px;
+ height: 200px;
+ margin: 0 auto;
+ background-color: rgba(0,0,0,.7);
+    }
+    
+#border2{
+ font-family: 'Major Mono Display', monospace;
+ font-size: 10px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ border: solid ;
+ border-width: 2px;
+ border-color: darkorange;   
+ border-radius: 5px;
+ width: 900px;
+ height: 200px;
+ margin: 0 auto;
+ background-color: rgba(0,0,0,.7);    
+    }  
+
+#border3{
+ font-family: 'Major Mono Display', monospace;
+ font-size: 10px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ justify-content: space-between;
+ justify-content: space-around;
+ flex-direction: column;
+ border: solid ;
+ border-width: 2px;
+ border-color: darkorange;   
+ border-radius: 5px;
+ width: 900px;
+ height: 500px;
+ margin: 0 auto;
+ background-color: rgba(0,0,0,.7);    
+        }    
+
+.ipt1{
+ align-self: center;
+ height: 40px;    
+ width: 130px;
+ border-radius: 5px;   
+    }
+
+.ipt2{
+ align-self: center;
+ height: 40px;    
+ width: 130px;
+ border-radius: 5px;    
+    } 
+
+.ipt3{
+ align-self: center;
+ height: 40px;      
+ width: 130px;
+ border-radius: 5px;   
+    } 
+
+.ipt4{
+ align-self: center;
+ height: 40px;    
+ width: 130px;
+ border-radius: 5px;  
+    }
+    
+
+.eyecolor{
+ display: flex;
+ align-self: center;    
+ font-size: 13px;    
+    }
+
+#header1{
+ align-self: center;    
+    }
+
+#header2{
+ align-self: center;    
+    }
+
+#header3{
+ align-self: center;    
+    }
+        
+#btn1{
+ font-family: 'Major Mono Display', monospace;
+ font-size: 20px;
+ color: white;
+ height: 40px;    
+ width: 130px;
+ align-self: center;
+ background: blue;
+ border: solid 3px;
+ border-color: darkblue;
+ border-radius: 5px;
+    }
+    
+.target1{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;    
+    }
+    
+.target2{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;
+    
+    }
+
+.target3{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;   
+    }
+    
+.target4{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;          
+    }
+    
+.target5{
+ font-family: 'Major Mono Display', monospace;   
+ color: white;
+ display: flex;
+ justify-content: center;
+ font-size: 15px;          
+    }        </style></head>
+
+    <body>    
+
+<div id="banner">
+    <p id="bannertxt"> 
+    driving survey
+    </p>
+</div>
+
+<div id="border1">
+<h2 id="header1">please enter your first and last name</h2> 
+    <br><input class="ipt1" placeholder="First name">
+    <br><input class="ipt2" placeholder="Last name">
+</div>
+
+<div id="border2">
+    <h2 id="header2">please enter your age and date of birth</h2>
+        <br><input class="ipt3" placeholder="Age" max="13" min="99" value="">
+        <br><input class="ipt4" type="date" max="01-01-2019" min="01-01-1920" value="">
+</div>
+
+<div id="border3">
+    <h2 id="header3">please enter your eye color</h2>
+     <form class="eyecolor">
+        <br>blue<input name="eyes" value="blue" class="ipt5" type="radio">
+        <br>brown<input name="eyes" value="brown" class="ipt6" type="radio">
+        <br>black<input name="eyes" value="black" class="ipt7" type="radio" checked="">
+     </form>
+<button id="btn1">submit</button>
+<p class="target1"></p>
+<p class="target2"></p>
+<p class="target3"></p>
+<p class="target4"></p>
+<p class="target5"></p>
+</div>    
+    
+
+<script>
+/*__POPCODESTART__*/
+
+//declare variables
+var Fname;
+var Lname;
+var age;
+var dob;
+var dobipt;
+var eye;
+//click handler - Just reset variables (besides age) above in click function
+
+
+//OBJECT
+var Obj = {
+Firstname: "",
+Lastname: "",
+ageProp: 0,
+Dateofbirth: "",
+Eyecolor: "",   
+
+//METHOD 1
+print: function(a){
+document.querySelector(".target2").innerHTML = "Firstname:" + " "  + Fname;
+   
+document.querySelector(".target3").innerHTML = "Lastname:" + " " + Lname;   
+    
+document.querySelector(".target4").innerHTML = "Eye" + " " + "Color:" +  this.Eyecolor;    
+    
+document.querySelector(".target5").innerHTML = "Date of Birth:" + dob;
+    } ,
+
+//METHOD 2  
+checkAge: function(a){
+if(this.ageProp < 13){
+//alert("Your age does not qualify, therefore you can not submit this survey");
+}
+//WORKS
+
+if(this.ageProp > 13){
+document.querySelector(".target1").innerHTML = ("You are qualified to recieve a permit");
+}  
+  
+    }        
+    };    
+
+//CLICK FUNCTION
+document.getElementById("btn1").addEventListener('click',
+    function(){
+Fname = document.querySelector(".ipt1").value;
+Obj.Firstname = Fname;
+console.log(Fname); //WORKS
+
+Lname = document.querySelector(".ipt2").value;
+Obj.Lastname = Lname;
+console.log(Lname); //WORKS
+
+eye = document.querySelector(".eyecolor");
+Obj.Eyecolor = eye.eyes.value;
+console.log(Obj.Eyecolor); //WORKS
+
+age = document.querySelector(".ipt3").value;
+Obj.ageProp = age;
+Obj.checkAge(); 
+console.log(Obj.checkAge);//WORKS
+
+dob = document.querySelector(".ipt4").value;
+Obj.Dateofbirth = dob;
+console.log(dob); //WORKS
+
+//Print method
+Obj.print();   
+    });   </script></body></html>
